@@ -6,7 +6,7 @@ def speech_recognize(model='base'):
     speech_model = whisper.load_model(model)
 
     # transcribe передаем звуковой объект
-    result = speech_model.transcribe('/home/adidarich/PycharmProjects/audio_to_text/data/music.mp3')
+    result = speech_model.transcribe('/music.mp3')
 
     # save result in file
     with open(f'transcription_{model}.txt', 'w') as file:
