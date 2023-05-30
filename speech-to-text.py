@@ -36,7 +36,7 @@ def main():
     if user_model not in models.keys():
         raise KeyError(f"Models {models} not listed")
 
-    print('The transcribtion started, please wait...')
+    print('The [транскрибация] started, please wait...')
     speech_recognize(model=models[user_model])
 
 
